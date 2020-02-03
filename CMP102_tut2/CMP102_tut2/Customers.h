@@ -5,14 +5,12 @@
 class Customers
 {
 	private:
-		std::string ID = "";
+		int ID = 0;
 		int numberOfAccounts = 0;
 	public:
 		Customers();
 		~Customers();
-		std::string setID(std::string);
-
-		std::string getID()
+		int getID()
 		{
 			return ID;
 		}

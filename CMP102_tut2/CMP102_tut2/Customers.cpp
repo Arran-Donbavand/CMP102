@@ -4,22 +4,18 @@ using namespace std;
 
 Customers::Customers()
 {
-	
+	if (ID == 0)
+	{
+		this->ID = 1;
+		ID += 1;
+	}
+	else
+	{
+		this->ID = ID;
+		ID += 1;
+	}
 }
 Customers::~Customers()
 {
 }
 
-std::string Customers::setID(string IDToSet)
-{
-	
-	if (ID == "")
-	{
-		ID = IDToSet;
-	}
-	else
-	{
-		std::cout << "Error: ID Has already been set \n";
-	}
-	return ID;
-}

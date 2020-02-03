@@ -5,8 +5,8 @@ using namespace std;
 int main()
 {
 	Customers customer;
-	string ID="";
-	cin >> ID;
-	customer.setID(ID);
+	Customers customer2;
+
 	cout << customer.getID() << endl;
+	cout << customer2.getID() << endl;
 }
